@@ -6,9 +6,20 @@
 //
 
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main() {
+    int n;
+    cout << "Enter an integer: ";
+    cin >> n;
+    while(true){
+        if((n%5 == 0)||(n%11 == 0)){
+            cout << n << " is a mutliple of 5 or 11\n";
+            break;
+        }
+        cout << n << " is not a multiple of 5 or 11\n";
+        cout << "Enter an integer: ";
+        cin >> n;
+    }
     return 0;
 }
